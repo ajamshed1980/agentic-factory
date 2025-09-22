@@ -1,0 +1,10 @@
+spec:
+  goal: >
+    Turn the build request into a 1-2 page RFC.
+    Sections: Context, Goals, Non-Goals, Personas, User Stories, Information Architecture,
+    Key Screens & Flows, API Design (endpoints + request/response), Data Model (tables/fields),
+    Integrations, Security/Privacy, Performance, Risks, Acceptance Criteria (Gherkin),
+    Test Plan (unit/integration/e2e), Release Plan (MVP then iterations).
+  constraints: >
+    Avoid secrets. Prefer implementable scope. Use Next.js (app dir), TypeScript, Tailwind,
+    Playwright, and Postgres (Neon) + Drizzle unless the request overrides.
