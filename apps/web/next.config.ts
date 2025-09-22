@@ -1,7 +1,23 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Configuration for development server
+  ...(process.env.NODE_ENV === 'development' && {
+    // Allow iframe embedding for Replit proxy
+    async headers() {
+      return [
+        {
+          source: '/(.*)',
+          headers: [
+            {
+              key: 'X-Frame-Options',
+              value: 'ALLOWALL',
+            },
+          ],
+        },
+      ];
+    },
+  }),
 };
 
 export default nextConfig;
