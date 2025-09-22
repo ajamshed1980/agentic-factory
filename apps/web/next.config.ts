@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
     allowedDevOrigins: [
       'localhost',
       '127.0.0.1',
-      // Allow all Replit domains
-      '*.replit.dev',
+      // Allow all Replit domains (simplified pattern)
+      '4404f7fd-4700-4ce9-b755-656e5b0e8262-00-1oltauv8jyvxp.riker.replit.dev',
     ],
     // Allow iframe embedding for Replit proxy
     async headers() {
